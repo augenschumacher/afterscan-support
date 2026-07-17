@@ -3,81 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datenschutzerklärung für die iPhone- und iPad-App AfterScan.">
   <title>Datenschutzerklärung – AfterScan</title>
   <style>
+    :root { color-scheme: light dark; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.65;
+      color: light-dark(#111, #f5f5f7);
+      background: light-dark(#fff, #111);
     }
-    h1 { font-size: 2rem; }
-    h2 { margin-top: 2rem; }
-    a { color: #0066cc; }
+    h1 { font-size: clamp(2rem, 7vw, 3rem); margin: 0 0 0.5rem; }
+    h2 { margin-top: 2.2rem; font-size: 1.35rem; }
+    h3 { margin-top: 1.4rem; font-size: 1.08rem; }
+    a { color: light-dark(#0066cc, #64a8ff); }
+    .summary {
+      background: light-dark(#f5f5f7, #1c1c1e);
+      border-radius: 14px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    .muted, footer { color: light-dark(#666, #aaa); }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid light-dark(#e5e5e5, #333);
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Datenschutzerklärung für AfterScan PDF Scanner</h1>
+  <main>
+    <h1>Datenschutzerklärung für AfterScan</h1>
+    <p class="muted"><strong>Stand:</strong> 17. Juli 2026</p>
 
-  <p><strong>Stand:</strong> 28. Mai 2026</p>
+    <h2>1. Verantwortlicher</h2>
+    <address>
+      Fabio Schumacher<br>
+      Heimatstraße 31<br>
+      88046 Friedrichshafen<br>
+      Deutschland<br>
+      E-Mail: <a href="mailto:augen.schumacher@gmail.com">augen.schumacher@gmail.com</a>
+    </address>
 
-  <h2>1. Verantwortlicher</h2>
-  <p>
-    Verantwortlich für diese App ist:
-  </p>
-  <p>
-    Fabio Schumacher<br>
-    E-Mail: <a href="mailto:schumacher.fabio@gmx.de">schumacher.fabio@gmx.de</a>
-  </p>
+    <div class="summary">
+      <strong>Kurzfassung:</strong> AfterScan verarbeitet Dokumente, Kamerabilder,
+      Texterkennung und Signaturen lokal auf dem Gerät. Die App enthält keine Werbung,
+      kein Tracking, keine Analyse-SDKs, kein Benutzerkonto und keine eigene
+      Serverübertragung. Dokumente verlassen das Gerät nur, wenn Nutzerinnen oder Nutzer
+      selbst eine Export- oder Teilen-Funktion auslösen.
+    </div>
 
-  <h2>2. Zweck der App</h2>
-  <p>
-    AfterScan PDF Scanner ermöglicht das Importieren vorhandener Fotos,
-    das Bearbeiten von Dokumentkanten, das Einfügen von Signaturen und den Export
-    als PDF oder Bilddatei.
-  </p>
+    <h2>2. Lokale Verarbeitung in der App</h2>
+    <p>Je nach Nutzung verarbeitet AfterScan lokal:</p>
+    <ul>
+      <li>mit der Kamera aufgenommene Dokumentbilder,</li>
+      <li>über den System-Fotopicker ausgewählte Bilder,</li>
+      <li>aus der Dateien-App ausgewählte PDF- und Bilddateien,</li>
+      <li>erkannte Dokumentkanten, Scanbilder und gewählte Bildfilter,</li>
+      <li>mit Apples Vision-Framework auf dem Gerät erkannten Text,</li>
+      <li>gezeichnete oder importierte Signaturbilder sowie</li>
+      <li>lokale Arbeitsstände, Miniaturbilder und Exporte.</li>
+    </ul>
+    <p>
+      Diese Inhalte werden nur für die gewählten App-Funktionen verarbeitet. AfterScan
+      übermittelt sie nicht automatisch an den Verantwortlichen oder an eigene Server.
+    </p>
 
-  <h2>3. Verarbeitung personenbezogener Daten</h2>
-  <p>
-    Die App verarbeitet die vom Nutzer ausgewählten Bilder und Dokumente lokal auf dem Gerät.
-    Die Inhalte werden nicht an einen eigenen Server des Entwicklers übertragen.
-  </p>
+    <h2>3. Berechtigungen und Systemzugriffe</h2>
+    <h3>Kamera</h3>
+    <p>
+      Der Kamerazugriff wird nur angefragt, wenn die Aufnahmefunktion verwendet wird.
+      Die Berechtigung kann jederzeit in den iOS-Einstellungen geändert werden.
+    </p>
+    <h3>Fotos und Dateien</h3>
+    <p>
+      AfterScan verwendet die systemeigenen Auswahloberflächen von iOS und erhält dadurch
+      nur Zugriff auf die konkret ausgewählten Bilder oder Dateien.
+    </p>
+    <h3>Teilen und Export</h3>
+    <p>
+      Erst nach einer bewussten Auswahl im iOS-Teilen-Menü wird ein Export an das gewählte
+      Ziel übergeben. Für dessen weitere Verarbeitung gelten die Bedingungen des jeweiligen
+      Drittanbieters.
+    </p>
 
-  <h2>4. Zugriff auf Fotos und Dateien</h2>
-  <p>
-    Die App kann Zugriff auf Fotos oder Dateien anfordern, damit Nutzer Dokumente importieren
-    und bearbeiten können. Der Zugriff erfolgt nur, wenn der Nutzer ihn aktiv erlaubt.
-  </p>
+    <h2>4. Speicherung und Löschung</h2>
+    <p>
+      Arbeitsdokumente und gespeicherte Signaturen liegen im geschützten App-Speicher.
+      Der letzte Arbeitsstand wird lokal gespeichert, damit eine unterbrochene Sitzung
+      wiederhergestellt werden kann. Arbeitsdateien sind für das Betriebssystem als nicht
+      zu sichernde Arbeitsdaten gekennzeichnet.
+    </p>
+    <p>
+      Seiten und Signaturen können in der App gelöscht werden. Durch das Löschen der App
+      entfernt iOS den zugehörigen App-Speicher. Bereits exportierte Dateien müssen an dem
+      Ort gelöscht werden, an dem sie gespeichert oder geteilt wurden.
+    </p>
 
-  <h2>5. Signaturen</h2>
-  <p>
-    Wenn Nutzer eine Signatur erstellen oder einfügen, wird diese zur Bearbeitung des jeweiligen
-    Dokuments verwendet. Eine Übertragung an einen eigenen Server des Entwicklers findet nicht statt.
-  </p>
+    <h2>5. Tracking, Werbung und Analyse in der App</h2>
+    <p>
+      AfterScan nutzt keine Tracking-Technologien, Werbenetzwerke oder Analyse-SDKs und
+      führt kein geräte- oder appübergreifendes Tracking durch. Das mit der App ausgelieferte
+      Apple Privacy Manifest erklärt keine Datenerhebung und kein Tracking.
+    </p>
+    <p>
+      Apple kann unabhängig von AfterScan Diagnose- oder App-Store-Daten gemäß den
+      Geräteeinstellungen und Apples eigenen Datenschutzbedingungen verarbeiten.
+    </p>
 
-  <h2>6. Weitergabe von Daten</h2>
-  <p>
-    Es erfolgt keine Weitergabe personenbezogener Daten an Dritte durch den Entwickler.
-  </p>
+    <h2>6. Kontaktaufnahme per E-Mail</h2>
+    <p>
+      Wer den Support per E-Mail kontaktiert, übermittelt freiwillig insbesondere
+      E-Mail-Adresse, Absendername, Betreff, Nachrichteninhalt, Zeitpunkte und gegebenenfalls
+      Anhänge oder technische Angaben. Diese Daten werden ausschließlich zur Bearbeitung
+      der Anfrage und damit zusammenhängender Rückfragen verwendet.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt bei Anfragen zur Nutzung von AfterScan oder zu einem
+      Vertragsverhältnis auf Grundlage von Art. 6 Abs. 1 Buchst. b DSGVO. In anderen Fällen
+      beruht sie auf dem berechtigten Interesse an der Beantwortung von Support- und
+      Datenschutzanfragen nach Art. 6 Abs. 1 Buchst. f DSGVO.
+    </p>
+    <p>
+      Support-E-Mails werden gelöscht, sobald die Anfrage abschließend erledigt ist und
+      keine gesetzlichen Aufbewahrungspflichten oder die Geltendmachung, Ausübung oder
+      Verteidigung von Rechtsansprüchen eine weitere Speicherung erfordern.
+    </p>
+    <p>
+      Für das Postfach wird Gmail von Google Ireland Limited, Gordon House, Barrow Street,
+      Dublin 4, Irland, eingesetzt. Google kann Daten nach seinen Bedingungen auch außerhalb
+      des Europäischen Wirtschaftsraums verarbeiten. Weitere Informationen enthält die
+      <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.
+      Bitte keine vertraulichen Originaldokumente, vollständigen Ausweiskopien oder
+      ungeschwärzten personenbezogenen Unterlagen an den Support senden.
+    </p>
 
-  <h2>7. Analyse, Tracking und Werbung</h2>
-  <p>
-    Die App verwendet nach aktuellem Stand keine eigenen Analyse-, Tracking- oder Werbedienste.
-  </p>
+    <h2>7. Hosting dieser Webseite</h2>
+    <p>
+      Diese Support- und Datenschutzseiten werden über GitHub Pages bereitgestellt. Beim
+      Aufruf stellt der Browser eine direkte Verbindung zu GitHub her. GitHub kann dabei
+      insbesondere IP-Adresse, Datum und Uhrzeit, aufgerufene Adresse, Referrer sowie
+      Browser- und Geräteinformationen verarbeiten, um die Seite auszuliefern und die
+      Sicherheit und Stabilität des Dienstes zu gewährleisten.
+    </p>
+    <p>
+      Die Bereitstellung beruht auf dem berechtigten Interesse, leicht erreichbare Support-
+      und Datenschutzinformationen anzubieten, Art. 6 Abs. 1 Buchst. f DSGVO. Anbieter sind
+      je nach Verarbeitung GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam,
+      Niederlande, und GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco,
+      CA 94107, USA.
+    </p>
+    <p>
+      GitHub beschreibt internationale Übermittlungen und verwendete Garantien in der
+      <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.
+      Auf diesen AfterScan-Seiten sind keine eigenen Analyse-, Werbe- oder Tracking-Skripte
+      eingebunden. Von GitHub gesetzte Cookies oder ähnliche Technologien liegen außerhalb
+      des Einflusses von AfterScan.
+    </p>
 
-  <h2>8. Kontakt</h2>
-  <p>
-    Bei Fragen zum Datenschutz oder zur App kann der Entwickler per E-Mail kontaktiert werden:
-    <a href="mailto:schumacher.fabio@gmx.de">schumacher.fabio@gmx.de</a>
-  </p>
+    <h2>8. Datenübermittlungen in Drittländer</h2>
+    <p>
+      Die App übermittelt Dokumente, Scans, OCR-Ergebnisse oder Signaturen nicht automatisch
+      an eigene oder fremde Server. Eine Übermittlung solcher Inhalte kann nur entstehen,
+      wenn Nutzerinnen oder Nutzer beim Export bewusst einen externen Dienst auswählen.
+      Unabhängig davon können beim Aufruf dieser Webseite oder bei einer Kontaktaufnahme per
+      Gmail technische Verbindungs- beziehungsweise Kommunikationsdaten durch GitHub oder
+      Google auch außerhalb des Europäischen Wirtschaftsraums verarbeitet werden.
+    </p>
 
-  <h2>9. Änderungen dieser Datenschutzerklärung</h2>
-  <p>
-    Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App oder rechtliche
-    Anforderungen ändern.
-  </p>
+    <h2>9. Rechte betroffener Personen</h2>
+    <p>
+      Da Dokumentinhalte ausschließlich auf dem Gerät verarbeitet werden, hat der
+      Verantwortliche grundsätzlich keinen Zugriff darauf. Soweit personenbezogene Daten
+      bei einer Supportanfrage oder über diese Webseite verarbeitet werden, bestehen nach
+      Maßgabe der gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft,
+      Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und
+      Widerspruch. Eine erteilte Einwilligung kann jederzeit mit Wirkung für die Zukunft
+      widerrufen werden.
+    </p>
+    <p>
+      Anfragen können an
+      <a href="mailto:augen.schumacher@gmail.com">augen.schumacher@gmail.com</a>
+      gerichtet werden. Außerdem besteht das Recht, sich bei einer Datenschutzaufsichtsbehörde
+      zu beschweren, insbesondere beim
+      <a href="https://www.baden-wuerttemberg.datenschutz.de/beschwerde/">Landesbeauftragten für den Datenschutz und die Informationsfreiheit Baden-Württemberg</a>.
+    </p>
+
+    <h2>10. Datenschutz von Kindern</h2>
+    <p>
+      AfterScan richtet sich nicht gezielt an Kinder und erhebt wissentlich keine
+      personenbezogenen Daten von Kindern über eigene Server.
+    </p>
+
+    <h2>11. Änderungen</h2>
+    <p>
+      Diese Erklärung wird angepasst, wenn sich Funktionen, Datenverarbeitung oder
+      rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung wird auf dieser Seite
+      veröffentlicht.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      <a href="./">Zur Support-Seite</a> ·
+      Datenschutz und Support: <a href="mailto:augen.schumacher@gmail.com">augen.schumacher@gmail.com</a>
+    </p>
+  </footer>
 </body>
 </html>
