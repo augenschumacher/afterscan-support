@@ -3,92 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Offizielle Support- und Kontaktseite für die iPhone- und iPad-App AfterScan.">
-  <title>AfterScan Support</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.65;
-      color: light-dark(#111, #f5f5f7);
-      background: light-dark(#fff, #111);
-    }
-    h1 { font-size: clamp(2rem, 7vw, 3rem); margin: 0 0 0.5rem; }
-    h2 { margin-top: 2rem; font-size: 1.35rem; }
-    a { color: light-dark(#0066cc, #64a8ff); }
-    .box {
-      background: light-dark(#f5f5f7, #1c1c1e);
-      border-radius: 14px;
-      padding: 18px;
-      margin: 20px 0;
-    }
-    .muted, footer { color: light-dark(#666, #aaa); }
-    footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid light-dark(#e5e5e5, #333);
-      font-size: 0.95rem;
-    }
-  </style>
+  <meta name="description" content="Hilfe und häufige Lösungen für die Dokumentenscanner-App AfterScan auf iPhone und iPad.">
+  <title>AfterScan – Hilfe und Support</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>AfterScan Support</h1>
-    <p class="muted">Offizielle Support-Seite für AfterScan auf iPhone und iPad.</p>
+  <div class="site-shell">
+    <main>
+      <header class="site-header">
+        <p class="eyebrow">AfterScan für iPhone und iPad</p>
+        <h1>Hilfe, wenn etwas hakt.</h1>
+        <p class="lead">
+          Antworten zu Kamera, Import, Dokumentbearbeitung, Texterkennung,
+          Signaturen und Export.
+        </p>
+      </header>
 
-    <div class="box">
-      <strong>Support-E-Mail</strong><br>
-      <a href="mailto:schumacher.fabio@gmx.de">schumacher.fabio@gmx.de</a>
-    </div>
+      <section class="card notice" aria-labelledby="lokal">
+        <h2 id="lokal">Deine Dokumente bleiben bei dir</h2>
+        <p>
+          AfterScan verarbeitet Scans, erkannten Text und Signaturen lokal auf dem Gerät.
+          Es gibt kein Benutzerkonto, keine Werbung und kein Tracking. Inhalte werden nur
+          weitergegeben, wenn du selbst exportierst oder das iOS-Teilen-Menü verwendest.
+        </p>
+      </section>
 
-    <p>
-      AfterScan importiert Kameraaufnahmen, Fotos, Bilder und PDFs, erkennt Dokumentkanten,
-      führt Texterkennung lokal auf dem Gerät aus und exportiert Dokumente als Bild, Text
-      oder PDF.
-    </p>
+      <section aria-labelledby="kurz-erklaert">
+        <h2 id="kurz-erklaert">Kurz erklärt</h2>
+        <p>
+          Mit AfterScan kannst du Papier über die Kamera erfassen oder vorhandene Fotos,
+          Bilder und PDFs importieren. Dokumentkanten lassen sich automatisch erkennen und
+          manuell korrigieren. Anschließend kannst du Seiten ordnen, verbessern, per OCR
+          durchsuchen, signieren und als Bild, Text oder PDF exportieren.
+        </p>
+      </section>
 
-    <h2>Wobei kann ich helfen?</h2>
-    <p>
-      Bei Fragen zur Kamera, zum Import, zur Dokumentbearbeitung, OCR, Signaturfunktion
-      oder zum Export beschreibe bitte die verwendete App-Version, iOS-Version, das
-      Gerätemodell und die Schritte bis zum Problem.
-    </p>
-    <p>
-      Bitte sende keine vertraulichen Originaldokumente, vollständigen Ausweiskopien oder
-      ungeschwärzten personenbezogenen Unterlagen. Ein Screenshot ohne vertrauliche Inhalte
-      genügt normalerweise.
-    </p>
+      <section aria-labelledby="haeufige-fragen">
+        <h2 id="haeufige-fragen">Häufige Fragen</h2>
+        <div class="faq">
+          <details>
+            <summary>Die Kamera ist nicht verfügbar</summary>
+            <p>
+              Prüfe unter „Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Kamera“, ob
+              AfterScan auf die Kamera zugreifen darf. Auf dem Simulator und auf Geräten
+              ohne unterstützte Kamera kann die Aufnahmefunktion eingeschränkt sein.
+            </p>
+          </details>
 
-    <h2>Häufige Lösungen</h2>
-    <ul>
-      <li>Kamerazugriff unter „Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Kamera“ prüfen.</li>
-      <li>Bei schlechter Kantenerkennung für gleichmäßiges Licht und einen kontrastreichen Hintergrund sorgen.</li>
-      <li>Für ein durchsuchbares PDF zuerst die Texterkennung auf allen Seiten abschließen.</li>
-      <li>Bei großen Dokumenten freien Gerätespeicher prüfen oder eine niedrigere Exportqualität wählen.</li>
-    </ul>
+          <details>
+            <summary>Dokumentkanten werden nicht richtig erkannt</summary>
+            <p>
+              Lege das Dokument auf eine ebene, kontrastreiche Fläche, vermeide Spiegelungen
+              und sorge für gleichmäßiges Licht. Die vier Eckpunkte können vor dem Scannen
+              jederzeit von Hand korrigiert werden.
+            </p>
+          </details>
 
-    <h2>Datenschutz</h2>
-    <p>
-      Dokumente, OCR und Signaturen werden lokal verarbeitet. Die vollständige
-      <a href="privacy.html">Datenschutzerklärung für AfterScan</a> beschreibt außerdem
-      den E-Mail-Support und das Hosting dieser Seite.
-    </p>
+          <details>
+            <summary>Die Texterkennung ist unvollständig</summary>
+            <p>
+              OCR hängt von Schärfe, Auflösung, Kontrast, Sprache und Seitenlayout ab.
+              Korrigiere zuerst die Dokumentkanten, probiere den Filter „Dokument“ oder
+              „S/W“ und starte die Texterkennung erneut.
+            </p>
+          </details>
 
-    <h2>Anbieter und Kontakt</h2>
-    <address>
-      Fabio Schumacher<br>
-      Heimatstraße 31<br>
-      88046 Friedrichshafen<br>
-      Deutschland<br>
-      E-Mail: <a href="mailto:schumacher.fabio@gmx.de">schumacher.fabio@gmx.de</a>
-    </address>
-  </main>
+          <details>
+            <summary>Ein Import wird abgelehnt</summary>
+            <p>
+              AfterScan begrenzt eine einzelne Datei auf 250 MB und ein Arbeitsdokument auf
+              100 Seiten. Unterstützt werden PDF sowie gängige Bildformate wie JPEG, PNG,
+              HEIC/HEIF, TIFF, GIF und BMP.
+            </p>
+          </details>
 
-  <footer>
-    <p>AfterScan – Support · Stand: 17. Juli 2026</p>
-  </footer>
+          <details>
+            <summary>Ein Export lässt sich nicht öffnen oder teilen</summary>
+            <p>
+              Prüfe den freien Gerätespeicher und versuche eine niedrigere Exportqualität.
+              Für ein durchsuchbares PDF muss die Texterkennung auf allen Seiten abgeschlossen
+              sein. Die Unterstützung mehrerer Bilddateien hängt auch von der Ziel-App ab.
+            </p>
+          </details>
+
+          <details>
+            <summary>Der letzte Arbeitsstand fehlt</summary>
+            <p>
+              AfterScan versucht den zuletzt lokal gespeicherten Arbeitsstand beim Start
+              wiederherzustellen. Nach einer App-Löschung, Speicherbereinigung oder beschädigten
+              lokalen Dateien ist das nicht immer möglich. Wichtige Dokumente solltest du nach
+              Abschluss in einen selbst gewählten Speicherort exportieren.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section aria-labelledby="kontakt">
+        <h2 id="kontakt">Noch eine Frage?</h2>
+        <p>
+          Nenne bei einer Anfrage möglichst App-Version, iOS-Version, Gerätemodell und die
+          Schritte bis zum Problem. Bitte sende keine vertraulichen Originaldokumente,
+          vollständigen Ausweiskopien oder ungeschwärzten personenbezogenen Unterlagen.
+        </p>
+        <a class="action" href="mailto:schumacher.fabio@gmx.de">Support kontaktieren</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>AfterScan · Hilfe und Support</p>
+      <nav aria-label="Rechtliches und Hilfe">
+        <a href="privacy.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>
